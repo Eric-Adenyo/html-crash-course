@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display:grid;
+            gap:5px;
+        
+            grid-template-areas: 'header header header header header'
+                                 'side content1 content1 content1 content1'
+                                 'side content2 content2 content3 content3'
+                                 'footer footer footer footer footer';
+        }
+        .container div{
+            padding:20px;
+            background-color:green;
+        } 
+        .item-1{
+            grid-area:header;
+        } 
+        .item-2{
+            grid-area:side;
+        } 
+        .item-3{
+            grid-area:content1;
+        } 
+        .item-4{
+            grid-area:content2;
+        } 
+        .item-5{
+            
+            grid-area:content3;
+        }  
+        .item-6{
+            
+            grid-area:footer;
+        } 
+         @media(max-width:600px){
+            grid-template-area:'header header'
+                               'side side'
+                               'content1 content1'
+                               'content2 content2'
+                               'content3 content3'
+                               'footer footer';
+         }      
+    </style>
+</head>
+
+<body>
+   <div class="container">
+    <div class="item-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure, et dolorem? Modi aperiam illum beatae nobis neque magni, repellat tempore inventore voluptatibus. Nam autem voluptate alias sed odio hic ex.</div>
+    <div class="item-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi maiores totam obcaecati voluptatibus at alias itaque, deleniti quaerat soluta adipisci aspernatur commodi ea suscipit, illo hic nam officia id earum!</div>
+    <div class="item-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore pariatur perspiciatis est odit neque dicta corporis exercitationem iusto, et qui possimus veniam aspernatur aperiam natus dolorum accusamus, quibusdam explicabo voluptatum!</div>
+    <div class="item-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, non reiciendis laboriosam modi officia, nemo a ut, nihil quaerat tempore laudantium dolorem aut ab maiores unde id natus atque nulla.</div>
+    <div class="item-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ab et itaque ullam molestiae labore accusamus nesciunt expedita tempore provident mollitia, omnis perferendis, pariatur aut nihil dolor. Vero, iure saepe.</div>
+    <div class="item-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur nihil at maxime non dolorem nemo, ex, aut porro corporis esse deleniti iste incidunt quidem culpa nobis in velit? Itaque, explicabo!</div>
+    
+   </div>
+</body>
+</html>

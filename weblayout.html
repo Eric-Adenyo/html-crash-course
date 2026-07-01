@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing:border-box;
+        }
+        body{
+            margin:0;
+            padding:0;
+            
+        }
+        header{
+            background-color:#f1f1f1;
+            padding:10px;
+            text-align:center;
+        }
+        ul{
+            list-style-type:none;
+            padding:0;
+            margin:0;
+            background-color:black;
+            display:flex;
+        }
+        ul li a{
+            display:block;
+            padding:16px 14px;
+            color:white;
+            text-decoration:none;
+
+        }
+        ul li a:hover{
+            background-color:green;
+            color:red;
+        }
+        .flex-container{
+            display:flex;
+            flex-direction:row;
+        }
+        .flex-container>div{
+            margin:15px;
+        }
+        @media(max-width:600px){
+            .flex-container{
+                flex-direction:column;
+            }
+        }
+        .footer{
+            background-color:#f1f1f1;
+            padding:10px;
+            text-align:center;
+            position:fixed;
+            bottom:0;
+            width:100%;
+            z-index:1000;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>My header</h2>
+    </header>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">contacts</a></li>
+        <li><a href="#">news</a></li>
+        <li><a href="#">about</a></li>
+    </ul>
+    <div class="flex-container">
+        <div>
+            <h2>Aside</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga illum vero iure dolor veritatis eveniet doloremque ratione sapiente minima quia perspiciatis, maxime assumenda corrupti autem ipsam a fugiat saepe incidunt!</p>
+        </div>
+        <div>
+            <h2>Main content</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, cupiditate pariatur recusandae maxime aperiam quia nam, possimus consequatur velit odio deserunt quas illum accusantium. Pariatur ratione minima doloribus et nobis.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, cupiditate pariatur recusandae maxime aperiam quia nam, possimus consequatur velit odio deserunt quas illum accusantium. Pariatur ratione minima doloribus et nobis.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, cupiditate pariatur recusandae maxime aperiam quia nam, possimus consequatur velit odio deserunt quas illum accusantium. Pariatur ratione minima doloribus et nobis.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, cupiditate pariatur recusandae maxime aperiam quia nam, possimus consequatur velit odio deserunt quas illum accusantium. Pariatur ratione minima doloribus et nobis.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas quidem reprehenderit provident ipsum, magnam eum perspiciatis veritatis, sint ratione voluptatum vitae ad! Cumque eligendi suscipit eum nostrum quisquam in explicabo!</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas quidem reprehenderit provident ipsum, magnam eum perspiciatis veritatis, sint ratione voluptatum vitae ad! Cumque eligendi suscipit eum nostrum quisquam in explicabo!</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas quidem reprehenderit provident ipsum, magnam eum perspiciatis veritatis, sint ratione voluptatum vitae ad! Cumque eligendi suscipit eum nostrum quisquam in explicabo!</p>
+        </div>
+        <div>
+            <h2>Aside</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam perferendis error sed excepturi tempora ducimus expedita fugit porro a omnis amet minus, quam earum, odio unde numquam dolorem voluptatem. Aut?</p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Footer</p>
+    </div>
+</body>
+</html>

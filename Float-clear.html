@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       *{
+        box-sizing:border-box;
+       }
+       .container{
+            max-width:600px;
+            border:2px solid green;
+            width:100%;
+            border-radius:10px;
+            background-color:#f2f2f2;
+            padding:20px;
+            
+       }
+       form{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-between;
+       }
+       label{
+         min-width:48%;
+         margin-bottom:10px;
+       }
+       input[type=text],select{
+         min-width:45%;
+         margin-bottom:10px;
+         padding:10px;
+         border: 1px solid #ccc;
+       }
+       textarea{
+         min-width:45%;
+         margin-bottom:10px;
+         padding:10px;
+         resize:none;
+         height:250px;
+         border-radius:5px;
+         border:1px solid #ccc;
+       }
+       input[type="submit"]{
+         border:none;
+         background-color:green;
+         padding:10px;
+         margin-bottom:10px;
+         color:white;
+         width:100%;
+       }
+       @media(max-width:600px){
+         label,input[type=text],textarea,select{
+            min-width:100%;
+         }
+       }
+    </style>
+</head>
+<body>
+    <div>
+        <form class="container">
+            <label for="fname">first name:</label>
+            <input type="text" name="fname" value="fname" placeholder="your first name"/>
+            <label for="lname">last name:</label>
+            <input type="text" name="lname" value="lname" placehoder="your last name"/>
+            <label for="country">Country</label>
+            <select name="country">
+                <option value="gh">Ghana</option>
+                <option value="SA">South Africa</option>
+                <option value="ng">Nigeria</option>
+                <option value="usa">USA</option>
+                <option value="ca">Canada</option>
+            </select>
+            <label for="message">Message</label>
+            <textarea>
+                Write something...
+            </textarea>
+            <input type="submit" name="submit" value="submit"/>
+        </form> 
+    </div>
+</body>
+</html>

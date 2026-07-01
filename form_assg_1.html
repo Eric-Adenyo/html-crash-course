@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing:border-box;
+        }
+        .responsive_form{
+            width:100%;
+            max-width:600px;
+            border:2px solid green;
+            background-color:#ccc;
+            padding:15px;
+            border-radius:5px;
+        }
+        form{
+            display:flex;
+            justify-content: space-between;
+            flex-wrap:wrap;
+        }
+        label{
+            min-width:48%;
+            margin-bottom:10px;
+        }
+        input[type=text],select{
+            min-width:45%;
+            margin-bottom:10px;
+            border-radius:5px;
+            padding:10px;
+            border:none;
+        }
+        textarea{
+            height:150px;
+            min-width:45%;
+            padding:10px;
+            margin-bottom:10px;
+        }
+        input[type=submit]{
+            padding:10px;
+            width:100%;
+            color:white;
+            background-color: green;
+            border:none;
+        }
+        @media(max-width:600px){
+            input[type=text],label,select,textarea{
+                flex:100%;
+                min-width:100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="responsive_form">
+        <form>
+            <label for="fname">first name:</label>
+            <input type="text" name="fname" placeholder="your first name"/>
+            <label for="lname">last name:</label>
+            <input type="text" name="lname" placeholder="your last name"/>
+            <label for="nationality">Nationality:</label>
+            <select id="nationality" name="nationality">
+                <option value="GH">Ghana</option>
+                <option value="SA">South Africa</option>
+                <option value="CA">Canada</option>
+                <option value="AU">Australia</option>
+                <option value="NZ">New Zealand</option>
+            </select>
+            <label for="message">Message:</label>
+            <textarea placeholder="your message...">
+
+            </textarea>
+            <input type="submit" name="submit" value="SEND"/>
+        </form>
+    </div>
+</body>
+</html>

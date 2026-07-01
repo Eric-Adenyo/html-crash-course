@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Police Application form</h1>
+    <h3>Please fill out the following information to complete your application</h3>
+    <form method="post">
+        <div>
+            <label>Applicant information</label>
+        </div>
+        <div>
+            <label>Name*</label>
+        </div>
+        <div>
+            <input type="text" name="name" placeholder="Enter your full name"/>
+        </div>
+        <div>
+            <label>Date of birth*</label>
+        </div>
+        <div>
+            <input type="date" name="Birth date" placeholder="Enter your date of birth"/>
+        </div>
+        <div>
+            <label>Gender*</label>
+        </div>
+        <div>
+            <input type="radio" name="gender"/>
+            <label>Male</label>
+        </div>
+        <div>
+            <input type="radio" name="gender"/>
+            <label>Female</label>
+        </div>
+        <div>
+            <button>Add  option</button>
+            <button>Add "other" option</button>
+        </div>
+        <div>
+            <label>Social security number<span style="color:red">*</span></label>
+        </div>
+        <div>
+            <input type="text" name="security no." placeholder="enter social security number" size="30"/>
+        </div>
+        <div>
+            <label>Address<span style="color:red">*</span></label>
+        </div>
+        <div>
+            <input type="text" name="address1" placeholder="streetaddress"/>
+        </div>
+        <div>
+            <label>Street address</label>
+        </div>
+        <div>
+            <input type="text" name="address2" />
+        </div>
+        <div>
+            <label>Email</label>
+        </div>
+        <div>
+            <input type="email" name="email" placeholder="enter your email"/>
+        </div>
+        <div>
+            <label>Enter phone number</label>
+        </div>
+        <div>
+            Are you a US Citizen?
+        </div>
+        <div>
+            <input type="radio" name="citizenship"/><span>yes</span>
+            <input type="radio" name="citizenship"/><span>no</span>
+        </div>
+        <div>
+            <select name="country">
+                <option>Ghana</option>
+                <option>USA</option>
+                <option>Nigeria</option>
+                <option>South Africa</option>
+            </select>
+        </div>
+        <div>
+            <textarea cols="50" rows="20">
+                state your reason for leaving**
+            </textarea>
+        </div>
+        <div><label>Submit form</label></div>
+        <div>
+            <input type="submit" name="submit" value="submit"/>
+        </div>
+        <div>
+            <input type="checkbox" name="bond" checked/> 
+            <label>I agree to all terms and conditions applied</label>
+        </div>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dropdown{
+            position:relative;
+        }
+        button{
+            padding:10px;
+            background-color:green;
+            color:white;
+            border:none;
+            min-width:150px;
+        }
+        .dropdown-content{
+            position:absolute;
+            background-color:#f9f9f9;
+            min-width:150px;
+            display:none;
+        }
+        .dropdown-content a{
+            padding:5px;
+            display:block;
+            text-decoration:none;
+            color:green;
+        }
+        .dropdown:hover .dropdown-content{
+            display:block;
+        }
+        .dropdown-content a:hover{
+            background-color:gold;
+        }
+    </style>
+</head>
+<body>
+    <div class="dropdown">
+        <button>Dropdown Menu</button>
+        <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
+    </div>
+</body>
+</html>

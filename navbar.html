@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            list-style-type:none;
+            padding:0;
+            margin:0;
+            width:200px;
+            border:5px solid black;
+        }
+        li a{
+            text-decoration:none;
+            color:black;
+            display:block;
+            padding:16px 8px;
+            background-color:red;
+            
+        }
+        li a:hover{
+            color:green;
+            background-color:blue;
+
+        }
+        li a.active{
+            background-color:green;
+            color:white;
+        }
+        li{
+            border-bottom:1px solid black;
+        }
+        li:last-child{
+            border-bottom:none;
+        }
+    </style>
+</head>
+<body>
+    <h2>This is a basic html navigation bar</h2>
+    <ul>
+        <li><a href="#Home">HOME</a></li>
+        <li><a href="#NEWS" class="active">NEWS</a></li>
+        <li><a href="#CONTACT">CONTACT</a></li>
+        <li><a href="#ABOUT">ABOUT</a></li>
+    </ul>
+</body>
+</html>

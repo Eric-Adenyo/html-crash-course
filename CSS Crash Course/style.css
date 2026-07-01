@@ -1,0 +1,60 @@
+
+div{
+    width:100%;
+    color:white;
+    background-color:rgba(0,0,0,0.5);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:10px;
+    font-weight:bold;
+    border:5px solid red;
+    padding:5%;
+    box-sizing:border-box;
+}
+p{
+    animation:pulldown 1000ms infinite alternate-reverse;
+}
+@keyframes pulldown{
+    0%{
+        transform:translateY(0px);
+    }
+    100%{
+        transform:translateY(16px);
+    }
+}
+p::after{
+    content:" is my name";
+    color:aqua;
+    background-color:green ;
+}
+/* Pseudo selectors */
+button{
+    color:green;
+}
+button:hover{
+    color:red;
+    opacity:0;
+}
+/* Media queries */
+.title{
+    font-size:52px;
+}
+.paragraph{
+    font-size:24px;
+}
+@media(max-width:640px){
+    .title{
+        font-size:15px;
+    }
+    .paragraph{
+    font-size:15px;
+}
+@media(max-width:480px){
+    .title{
+        font-size:12px;
+    }
+    .paragraph{
+    font-size:12px;
+}
+}
+
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            list-style-type:none;
+            padding:0;
+            margin:0;
+            
+        }
+        li{
+            float:left;
+        }
+        a{
+            display:block;
+            padding:15px;
+            background-color:black;
+            color:white;
+            text-decoration: none;
+        }
+        .drop1 a{
+            color:green;
+            background-color:#f9f9f9;
+        }
+        .drop1{
+            display:none;
+        }
+        li:hover .drop1{
+            display:block;
+        }
+        a:hover{
+            background-color:red;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#">Home</a>
+                <div class="drop1">
+                <a href="#">link1</a>
+                <a href="#">link2</a>
+                <a href="#">link3</a>
+            </div>
+        </li>
+        <li><a href="#">News</a>
+                <div class="drop1">
+                <a href="#">link1</a>
+                <a href="#">link2</a>
+                <a href="#">link3</a>
+            </div>
+        </li>
+        <li><a href="#">Dropdown</a>
+            <div class="drop1">
+                <a href="#">Link1</a>
+                <a href="#">Link1</a>
+                <a href="#">Link1</a>
+            </div>
+        </li>
+    </ul>
+</body>
+</html>

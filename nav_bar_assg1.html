@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing:border-box;
+        }
+        body{
+            padding:0;
+            margin:0;
+        }
+        header{
+            text-align:center;
+            padding:10px;
+            background-color:skyblue;
+        }
+        ul{
+            list-style-type:none;
+            padding:0;
+            margin:0;
+            display:flex;
+            background-color:greenyellow;
+            position:sticky;
+            top:0;
+        }
+        ul a{
+            display:block;
+            padding:10px;
+            text-decoration:none;
+        }
+        ul a:hover{
+            color:red;
+            background-color:blue;
+        }
+        .flex-container{
+            display:flex;
+            
+            flex-direction:row;
+        }
+        .flex-container>div{
+            margin:10px;
+        }
+
+        @media(max-width:600px){
+            .flex-container{
+                flex-direction:column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>WEBSITE HEADING</h1>
+        <p>Try resizing the page to see its responsive effect</p>
+    </header> 
+    <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">NEWS</a></li>
+        <li><a href="#">CONTACTS</a></li>
+        <li><a href="#">ABOUT</a></li>
+    </ul>
+    <div class="flex-container">
+        <div>Aside</div>
+        <div>
+            <h1>Heading</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa molestias, cum doloribus, corrupti quo reprehenderit corporis adipisci voluptates error delectus placeat libero repellendus, repudiandae molestiae quam tempora nihil sequi fugiat!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, impedit. Optio consequuntur cupiditate quia. Voluptatum, ex doloribus. Odit, debitis praesentium omnis excepturi, numquam nisi dolorum incidunt quam autem ut eum.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quidem labore dolor excepturi dolore cumque nisi expedita earum autem ea, minima exercitationem quo ut fugit alias corrupti, unde iste adipisci!</p>
+        </div>
+        <div>Aside</div>
+    </div>
+</body>
+</html>

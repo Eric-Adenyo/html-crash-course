@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing:border-box;
+        }
+        .enquire_form .heading{
+            text-align:center;
+            margin:10px;
+            border:2px solid #ccc;
+            border-radius:5px;
+        }
+        .enquire_form .requisition_form{
+            border:2px solid #ccc;
+            margin:10px;
+            padding:10px;
+            border-radius:5px;
+        }
+        form{
+            display:flex;
+            flex-wrap:wrap;
+        }
+        label{
+            min-width:48%;
+            margin-bottom:10px;
+        }
+        input[type=text],input[type=email],select,textarea{
+            min-width:45%;
+            margin-bottom:10px;
+            padding:10px;
+        }
+        textarea{
+            height:150px;
+            resize:none;
+        }
+        input[type=submit]{
+            margin-left:48%;
+            min-width:30%;
+            padding:10px;
+            background-color: blue;
+            color:white;
+            border:none;
+        }
+        @media(max-width:700px){
+            label,input[type=text],input[type=email],select,textarea,input[type=submit]{
+                flex:100%;
+                min-width:100%;
+            
+            }
+            input[type=submit]{
+                margin-left:0%;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div class="enquire_form">
+        <div class="heading">
+            <h1>Speaker Submission</h1>
+            <h3>Want to speak at our fake conference?</h3>
+            <h3>Fill the form below</h3>
+        </div>
+        <div class="requisition_form">
+            <form>
+                <label>Name</label>
+                <input type="text" name="fname"/>
+                <label>Email</label>
+                <input type="email" name="email" placeholder="you@example.com"/>
+                <label>Type of talk</label>
+                <input type="radio" name="talk"/><a style="margin-top:5px;">Main Stage</a>
+                <input type="radio" name="talk"/><a style="margin:5px 0px 0px 5px;">Workshop</a>
+                <label>T-shirt size</label>
+                <select name="size">
+                    <option>large</option>
+                    <option>Small</option>
+                    <option>medium</option>
+                </select>
+                <label>Abstract</label>
+                <textarea>
+
+                </textarea>
+                <input type="submit" name="submit" value="submit"/>
+            </form>
+        </div>
+        
+    </div>
+</body>
+</html>

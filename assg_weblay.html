@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing:border-box;
+        }
+        body{
+            padding:0;
+            margin:0;
+        }
+       header,footer{
+        text-align:center;
+        color:white;
+        background-color:green;
+        padding:10px;
+       }
+       ul{
+        list-style-type:none;
+        margin:0;
+        padding:0;
+        background-color:black;
+        display:flex;
+        position:sticky;
+        top:0;
+       }
+       ul a{
+        display:block;
+        padding:10px;
+        text-decoration:none;
+        color:white;
+        
+       }
+       ul a:hover{
+        color:red;
+        background-color:blue;
+       }
+       .main{
+        display:flex;
+        padding:10px;
+       }
+       .side{
+        flex:30%;
+       }
+       .content{
+        flex:70%;
+       }
+       @media(max-width:700px){
+            ul,.main{
+                flex-direction:column;
+            }
+       }
+       
+
+    </style>
+</head>
+<body>
+    <header>
+        <h2>My website</h2>
+        <h5>With a flexible layout</h5>
+    </header>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">About</a></li>
+    </ul>
+    <div class="main">
+        <div class="side">
+            <h3>About me</h3>
+            <h5>Photo of me:</h5>
+            <div style="padding:10px;background-color:#f1f1f1;height:150px;">Image</div>
+            <p>Some text about me...</p>
+            <p>More text...</p>
+            <div style="padding:20px;background-color:#f1f1f1;margin-bottom:5px;">Image</div>
+            <div style="padding:20px;background-color:#f1f1f1;margin-bottom:5px;">Image</div>
+            <div style="padding:20px;background-color:#f1f1f1;">Image</div>
+        </div>
+        <div class="content">
+            <h3>TITLE HEADING</h3>
+            <h3>Title description, Dec 7,2024</h3>
+            <div style="padding:10px;background-color:#f1f1f1;height:150px;margin:5px;">Image</div>
+            <p>Some text...</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fuga architecto quas error illo minus cum doloribus laboriosam rem facilis eligendi, debitis, eveniet porro. Excepturi magnam perspiciatis autem saepe temporibus.</p>
+            <h3>TITLE HEADING</h3>
+            <h3>Title description, Dec 7,2024</h3>
+            <div style="padding:10px;background-color:#f1f1f1;height:150px;margin:5px;">Image</div>
+            <p>Some text...</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fuga architecto quas error illo minus cum doloribus laboriosam rem facilis eligendi, debitis, eveniet porro. Excepturi magnam perspiciatis autem saepe temporibus.</p>
+        </div>
+    </div>
+    <footer>
+        <h1>Footer</h1>
+    </footer>
+    
+</body>
+    

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=devic-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+          box-sizing:border-box;
+        }
+        .sign_up{
+            border:1px solid green;
+            border-radius:5px;
+        }
+        .sign_up .heading{
+            padding:10px;
+            background-color:red;
+            color:white;
+        
+        }
+        .sub_title{
+            font-weight:bold;
+            font-size:20px;
+            padding:10px;
+        }
+        .notice{
+            padding:10px;
+        }
+        .sub_heading{
+            background-color:#ccc;
+            padding:5px;
+            font-weight:bold;
+        }
+        .container{
+            width:100%;
+            max-width:600px;
+            padding:10px;
+            
+        }
+        form{
+            padding:10px;
+            display:flex;
+            flex-wrap:wrap;
+        }
+        label{
+            min-width:48%;
+            margin-bottom:10px;
+        }
+        textarea,input[type=radio],input[type=text],input[type=password],input[type=email],select{
+            margin-bottom:10px;
+            padding:5px;
+            min-width:45%;
+        }
+        textarea{
+            margin-bottom:10px;
+            padding:5px;
+            border: 2px solid blue;
+            border-radius:5px;
+            height:150px;
+            resize:none;
+            margin-bottom:10px;
+        }
+        input[type=number]{
+            min-width:45%;
+            margin-bottom:10px;
+        }
+        input[type=reset],input[type=submit]{
+            padding:10px;
+            margin:5px;
+            border-radius:5px;
+            min-width:45%;
+            border:1px solid blue;
+        }
+        @media(max-width:600px){
+            input,select,textarea{
+                flex:100%;
+                min-width:100%;
+            }
+        }
+    </style>
+    
+
+    
+</head>
+<body>
+    <div class="sign_up">
+        <div class="heading"><span style="font-size:25px">JobSearch</span>.com</div>
+        <div class="sub_title">Create your account</div>
+        <div class="notice"><span style="color:red;font-size:15px;">* Required information</span></div>
+        <div class="sub_heading">Basic Information</div>
+        <div class="container">
+            <form>
+                <label>Email <span style="color:red;">^</span></label>
+                <input type="email" name="email"/>
+                <label>password <span style="color:red;">^</span></label>
+                <input type="password" name="password"/>
+                <label>Retype password <span style="color:red;">^</span></label>
+                <input type="password" name="password"/>
+                <label>first name <span style="color:red;">^</span></label>
+                <input type="text" name="fname"/>
+                <label>last name <span style="color:red;">^</span></label>
+                <input type="text" name="lname"/>
+                <label>Phone number <span style="color:red;">^</span></label>
+                <input type="text" name="tel" placeholder="999-999-9999"/>
+                <label>Address <span style="color:red;">^</span></label>
+                <input type="text" name="address"/>
+                <label>city <span style="color:red;">^</span></label>
+                <input type="text" name="city"/>
+                <label>Region <span style="color:red;">^</span></label>
+                <select name="region" id="region">
+                    <option value="Accra">Greater Accra</option>
+                    <option value="Kumasi">Ashanti</option>
+                    <option value="Koforidua">Eastern</option>
+                    <option Value="Ho">Volta</option>
+                </select>
+                <label>country <span style="color:red;">^</span></label>
+                <input type="text" name="country"/>
+                <label>school <span style="color:red;">^</span></label>
+                <input type="text" name="school"/>
+                <label>Education level <span style="color:red;">^</span></label>
+                <select name="education_level">
+                    <option value="primary">JHS</option>
+                    <option value="secondary">SHS</option>
+                    <option value="Tertiary">First degree and above</option>
+                </select>
+                <label style="min-width:100%;">Education status <span style="color:red;">^</span></label>
+                <label>Graduated</label>
+                <input type="radio" name="education_status"/>
+                <label>currently enrolled</label>
+                <input type="radio" name="education_status"/>
+                <label>not graduated</label>
+                <input type="radio" name="education_status"/>
+                <label>Graduation Date</label>
+                <input type="text" name="graduation date"/>
+                <label>Employer</label>
+                <input type="text" name="employer"/>
+                <label>Job title</label>
+                <input type="text" name="job title"/>
+                <label>Job duty</label>
+                <textarea></textarea>
+                <label>Worked Years</label>
+                <input type="number" name="yearsofexper"/>
+                <label>Attachment</label>
+                <input type="file" name="CV"/>
+                <input type="reset" name="reset" value="reset"/>
+                <input type="submit" name="apply" value="apply"/>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
